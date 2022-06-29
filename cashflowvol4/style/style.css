@@ -1,0 +1,185 @@
+.panele
+{
+    opacity: 0.8;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+    color:lightgray;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#powrot:hover
+{
+    color:white;
+}
+
+.lista1>li
+{
+    border-bottom:1px;
+    border-bottom-style:solid;
+}
+
+.panele>ul
+{
+    font-size:30px;
+    padding-left: 0;
+}
+
+.panele>p
+{
+    font-size:30px;
+}
+
+li>span
+{
+    color: white;
+}
+
+#navbarTekst
+{
+    position: sticky;
+}
+
+.wazne
+{
+    color: lightgray;
+}
+
+.wazne:hover
+{
+    color: whitesmoke;
+}
+
+body
+{
+    background-color: #343a40;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: relative;
+}
+
+html, body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+    height:100%;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+nav
+{
+    border-bottom: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+p, span, h1, h2, h3
+{
+    color: white;
+}
+
+hr
+{
+    border-color: white;
+}
+
+.panele2
+{
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+footer
+{
+    display: block;
+    border-top: white;
+    border-top-style: solid;
+    border-top-width: 1px;
+    bottom: 0;
+    position: relative;
+}
+
+.accordion_panel
+{
+    min-height: 100px;
+    padding-bottom: 100px;
+}
+
+.accordion_panel > input
+{
+    text-align: center;
+}
+
+.klikniety_pokaz_button
+{
+    background-color: #0049dd !important;
+    border-color: #0049dd !important;
+}
+
+.nieklikniety_pokaz_button
+{
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.filtry_przychod_wydatki_visible
+{
+    visibility: visible;
+    position: static;
+}
+
+.filtry_przychod_wydatki_hidden
+{
+    visibility: hidden;
+    position: absolute;
+}
+
+.pokaz_filtry
+{
+    visibility: visible !important;
+    position: static;
+}
+
+.chowaj_filtry
+{
+    visibility: hidden;
+    position: absolute;
+}
+
+.przychod_div_visible, wydatki_div_visible
+{
+    visibility: visible !important;
+    position: static !important;
+}
+
+.przychod_div_hidden, wydatki_div_hidden
+{
+    visibility: hidden !important;
+    position: absolute !important;
+}
+
+#rodzaje_transakcji > button
+{
+    border-radius: 10px !important;
+}
