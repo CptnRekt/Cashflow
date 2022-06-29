@@ -8,7 +8,7 @@ struktury bazy danych można je bez problemu usunąć.
 
 A database server and HTTP server are required to run the application.
 I recommend the XAMPP package, which includes the following services: MySQL and Apache.
-In order to run the application, the "cashflow2.sql" file must be imported to the database server,
+In order to run the application, the "cashflow2.sql" file must be imported into the database server,
 while the "cashflowvol4" folder should be pasted into the "xampp/htdocs/" installation folder.
 The current version of the program isn't final, it may contain some bugs.
 The database file contains test data set such as accounts or transactions,
