@@ -20,21 +20,16 @@
 
 <body>
 
+To jest jakiś tekst co dodałem
+
 <?php
     require("skrypty_php/usun_konto_kredytowe.php");
     require("skrypty_php/archiwizuj_konto_kredytowe.php");
     require("skrypty_php/dodaj_konto_kredytowe_sql.php");
-    require("filtrowanie/filtrowanie.php");
+    require("filtrowanie/filtrowanieTo jest coś co zmodyfikowałem.php");
 ?>
 
-<nav class="navbar sticky-top navbar-dark bg-dark row">
- <div class="col pr-0 ml-0 mr-0 mt-1 mb-1 align-self-start">
-  <h1 class="navbar-brand">Cashyflow.pl</h1>
-  <?php 
-        echo '<br> <span>
-        <a class="lokacja" href="index.php">'.$_SESSION["login"].'</a> /
-        <a class="lokacja" href="dashboard.php"> dashboard </a></span>';
-  ?>
+
   </div>
   <div class="col pl-0 pr-0 ml-0 mr-0 mt-1 mb-2 align-self-end d-flex flex-row-reverse">
   <button class="navbar-toggler ml-2 mr-2 mb-3" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
