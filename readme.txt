@@ -13,3 +13,5 @@ while the "cashflowvol4" folder should be pasted into the "xampp/htdocs/" instal
 The current version of the program isn't final, it may contain some bugs.
 The database file contains test data set such as accounts or transactions,
 they can be removed after importing "cashflow2.sql" database file.
+
+ABC
