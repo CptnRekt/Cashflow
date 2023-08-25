@@ -20,7 +20,7 @@
 
 <body>
 
-To jest jakiś tekst co dodałem
+To jest jakiś tekst co dodałemDf
 
 <?php
     require("skrypty_php/usun_konto_kredytowe.php");
