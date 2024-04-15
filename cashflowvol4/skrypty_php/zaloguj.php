@@ -17,17 +17,21 @@ if ( isset( $_POST['submit'] ) ) {
         die( "Błąd połączenia: " . $conn->connect_error );
     }
 
+    //tu mozna zdefiniowac zapytanie albo nazwe procedury (czyli na przyklad call "nazwa procedury")
     $sql = "SELECT id, login, haslo, email FROM konta_uzytkownikow";
+    //tu wykonujemy zapytanie i przechowujemy jego wynik
     $result = $conn->query( $sql );
-
+    //jesli ilosc zwroconych wierszy z obiektu mysqli jest wieksza od 0 
     if ( @($result->num_rows > 0) ) {
+        //uzycie "fetch_assoc" powoduje wywolanie kolejnego wiersza z obiektu klasy mysqli, jesli nie ma juz wiecej wierszy to zwrocimy null
         while( $row = $result->fetch_assoc() ) {
-            if ( ( ( $login == $row["login"] ) || ( $login == $row["email"] ) ) && ( $haslo == $row["haslo"] ) ) {
+                //jesli login z formularza oraz haslo pokrywaja sie z danymi z zapytania to przeslij ukryty formularz z wartosciami loginu i hasla do nastepnej strony
                 $dopasowano = true;
                 echo '<form id="prawidlowe" action="dashboard.php" method="post">';
                 echo '<input name="login1" type="hidden" value="'.$login.'">';
                 echo '<input name="password1" type="hidden" value="'.$haslo.'">';
                 echo '</form>';
+                //ustaw dane logowania jako globalne
                 $_SESSION['zalogowany']=true;
                 $_SESSION['id_konta']=$row["id"];
                 $_SESSION['login']=$row["login"];
