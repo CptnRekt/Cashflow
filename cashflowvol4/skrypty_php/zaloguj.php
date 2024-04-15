@@ -1,4 +1,5 @@
 <?php
+//jesli przeslano posta z danymi logowania
 if ( isset( $_POST['submit'] ) ) {
     $login = @($_POST['login']);
     $haslo = @($_POST['haslo']);
@@ -11,6 +12,7 @@ if ( isset( $_POST['submit'] ) ) {
 
     $conn = new mysqli( $servername, $username, $password, $dbname );
 
+    //jesli polaczenie zwraca blad, to wyswietl blad i skipnij reszte skryptu php
     if ( $conn->connect_error ) {
         die( "Błąd połączenia: " . $conn->connect_error );
     }
